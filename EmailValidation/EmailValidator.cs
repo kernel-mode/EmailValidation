@@ -253,8 +253,8 @@ namespace EmailValidation
 		{
 			int index = 0;
 
-			if (email == null)
-				throw new ArgumentNullException ("email");
+		    if (email == null)
+		        return false;
 
 			if (email.Length == 0 || email.Length >= 255)
 				return false;
